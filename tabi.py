@@ -44,7 +44,7 @@ def write_password(password: str):
     fd = os.open(DEVICE_PATH, os.O_RDWR)
     fcntl.ioctl(fd, WR_C_PASS, password.encode())
     os.close(fd)
-    print(f"Đã ghi mật khẩu: {password}")
+    print(f"New password update: {password}")
 
 def read_password():
     fd = os.open(DEVICE_PATH, os.O_RDWR)
