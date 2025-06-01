@@ -57,23 +57,3 @@ Make sure the following files are in the same directory:
 * certificate.pem.crt
 * private.pem.key
 * AmazonRootCA1.pem (or RootCA.pem)
-
-
-* Flutter Mobile App Integration
-The project also includes a Flutter mobile app that connects to AWS IoT via MQTT (using TLS) to remotely monitor and control the door. This enables users to open/close the door or change the password directly from a smartphone.
-
-🧰 Features in Flutter App
-✅ Connect to AWS IoT Core securely (TLS certificates)
-
-🔓 Open/Close door by sending the password
-
-🔑 Change door password remotely
-
-📡 Display real-time door status
-
-📦 Flutter Stack
-mqtt_client for MQTT over TLS
-
-flutter_secure_storage for secure local config
-
-Custom UI to interact with door system
